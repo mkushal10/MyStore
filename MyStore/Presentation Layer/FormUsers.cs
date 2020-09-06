@@ -170,5 +170,25 @@ namespace MyStore.User_Interface
             cmbGender.Text = dgvUsers.Rows[rowIndex].Cells[8].Value.ToString();
             cmbUserType.Text = dgvUsers.Rows[rowIndex].Cells[9].Value.ToString();
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            //Get Keyword from Text box
+            string keywords = txtSearch.Text;
+
+            //Chec if the keywords has value or not
+            if (keywords != null)
+            {
+                //Show user based on keywords
+                DataTable dt = dal.Search(keywords);
+                dgvUsers.DataSource = dt;
+            }
+            else
+            {
+                //show all users from the database
+                DataTable dt = dal.Select();
+                dgvUsers.DataSource = dt;
+            }
+        }
     }
 }

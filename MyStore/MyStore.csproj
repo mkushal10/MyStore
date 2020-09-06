@@ -55,6 +55,12 @@
     <Compile Include="Presentation Layer\FormAdminDashboard.Designer.cs">
       <DependentUpon>FormAdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation Layer\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation Layer\FormUserDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -71,6 +77,9 @@
     </Compile>
     <EmbeddedResource Include="Presentation Layer\FormAdminDashboard.resx">
       <DependentUpon>FormAdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation Layer\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation Layer\FormUserDashboard.resx">
       <DependentUpon>FormUserDashboard.cs</DependentUpon>

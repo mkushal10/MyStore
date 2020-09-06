@@ -190,71 +190,72 @@ namespace MyStore.Data_Access_Layer
             return isSuccess;
         }
         //#endregion
+
         //#region Search User on Database usingKeywords
-        //public DataTable Search(string keywords)
-        //{
-        //    //Static MEthod to connect Database
-        //    SqlConnection conn = new SqlConnection(myconnstrng);
-        //    //TO hold the data from database 
-        //    DataTable dt = new DataTable();
-        //    try
-        //    {
-        //        //SQL Query to Get Data From DAtabase
-        //        String sql = "SELECT * FROM tbl_users WHERE id LIKE '%" + keywords + "%' OR first_name LIKE '%" + keywords + "%' OR last_name LIKE '%" + keywords + "%' OR username LIKE '%" + keywords + "%'";
-        //        //For Executing Command
-        //        SqlCommand cmd = new SqlCommand(sql, conn);
-        //        //Getting DAta from dAtabase
-        //        SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-        //        //Database Connection Open
-        //        conn.Open();
-        //        //Fill Data in our DataTable
-        //        adapter.Fill(dt);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        //Throw Message if any error occurs
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //    finally
-        //    {
-        //        //Closing Connection
-        //        conn.Close();
-        //    }
-        //    //Return the value in DataTable
-        //    return dt;
-        //}
+        public DataTable Search(string keywords)
+        {
+            //Static MEthod to connect Database
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            //TO hold the data from database 
+            DataTable dt = new DataTable();
+            try
+            {
+                //SQL Query to Get Data From DAtabase
+                String sql = "SELECT * FROM tbl_users WHERE id LIKE '%" + keywords + "%' OR first_name LIKE '%" + keywords + "%' OR last_name LIKE '%" + keywords + "%' OR username LIKE '%" + keywords + "%'";
+                //For Executing Command
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                //Getting DAta from dAtabase
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                //Database Connection Open
+                conn.Open();
+                //Fill Data in our DataTable
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                //Throw Message if any error occurs
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                //Closing Connection
+                conn.Close();
+            }
+            //Return the value in DataTable
+            return dt;
+        }
         //#endregion
 
         //#region Getting User ID from Username
-        //public UserBLL GetIDFromUsername(string username)
-        //{
-        //    UserBLL u = new UserBLL();
-        //    SqlConnection conn = new SqlConnection(myconnstrng);
-        //    DataTable dt = new DataTable();
+        public UserBLL GetIDFromUsername(string username)
+        {
+            UserBLL u = new UserBLL();
+            SqlConnection conn = new SqlConnection(myconnstrng);
+            DataTable dt = new DataTable();
 
-        //    try
-        //    {
-        //        string sql = "SELECT id FROM tbl_users WHERE username='" + username + "'";
+            try
+            {
+                string sql = "SELECT id FROM tbl_users WHERE username='" + username + "'";
 
-        //        SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
-        //        conn.Open();
+                SqlDataAdapter adapter = new SqlDataAdapter(sql, conn);
+                conn.Open();
 
-        //        adapter.Fill(dt);
-        //        if (dt.Rows.Count > 0)
-        //        {
-        //            u.id = int.Parse(dt.Rows[0]["id"].ToString());
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //    finally
-        //    {
-        //        conn.Close();
-        //    }
-        //    return u;
-        //}
+                adapter.Fill(dt);
+                if (dt.Rows.Count > 0)
+                {
+                    u.id = int.Parse(dt.Rows[0]["id"].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                conn.Close();
+            }
+            return u;
+        }
         //#endregion
     }
 }

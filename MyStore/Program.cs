@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyStore.Presentation_Layer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace MyStore
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormAdminDashboard());
+            Application.Run(new FormLogin());
         }
     }
 }
