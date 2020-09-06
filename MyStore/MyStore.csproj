@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,24 +47,32 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAdminDashboard.cs">
+    <Compile Include="Business Logic Layer\UserBLL.cs" />
+    <Compile Include="Data Access Layer\UserDAL.cs" />
+    <Compile Include="Presentation Layer\FormAdminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAdminDashboard.Designer.cs">
+    <Compile Include="Presentation Layer\FormAdminDashboard.Designer.cs">
       <DependentUpon>FormAdminDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormUserDashboard.cs">
+    <Compile Include="Presentation Layer\FormUserDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormUserDashboard.Designer.cs">
+    <Compile Include="Presentation Layer\FormUserDashboard.Designer.cs">
       <DependentUpon>FormUserDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAdminDashboard.resx">
+    <Compile Include="Presentation Layer\FormUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation Layer\FormUsers.Designer.cs">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Presentation Layer\FormAdminDashboard.resx">
       <DependentUpon>FormAdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormUserDashboard.resx">
+    <EmbeddedResource Include="Presentation Layer\FormUserDashboard.resx">
       <DependentUpon>FormUserDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -75,6 +84,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Presentation Layer\FormUsers.resx">
+      <DependentUpon>FormUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -88,5 +100,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

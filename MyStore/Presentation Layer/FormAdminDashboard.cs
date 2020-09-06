@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyStore.User_Interface;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace MyStore
         public FormAdminDashboard()
         {
             InitializeComponent();
+        }
+
+        //click event
+        //adding form name to open the form
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var form2 = new FormUsers();
+            form2.Show();//Display the next form window
         }
     }
 }

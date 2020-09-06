@@ -9,3 +9,4 @@ C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.csproj.Co
 C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.exe
 C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.pdb
 C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.FormUserDashboard.resources
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.User_Interface.FormUsers.resources
