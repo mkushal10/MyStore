@@ -1,0 +1,10 @@
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\bin\Debug\MyStore.exe.config
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\bin\Debug\MyStore.exe
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\bin\Debug\MyStore.pdb
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.csprojAssemblyReference.cache
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.FormAdminDashboard.resources
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.Properties.Resources.resources
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.csproj.GenerateResource.cache
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.csproj.CoreCompileInputs.cache
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.exe
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.pdb
