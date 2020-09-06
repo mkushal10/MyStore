@@ -8,3 +8,4 @@ C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.csproj.Ge
 C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.csproj.CoreCompileInputs.cache
 C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.exe
 C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.pdb
+C:\Users\Kushal Neupane\source\repos\MyStore\MyStore\obj\Debug\MyStore.FormUserDashboard.resources
