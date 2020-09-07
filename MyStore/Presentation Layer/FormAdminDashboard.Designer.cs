@@ -126,12 +126,11 @@
             // 
             this.lblLoggedUser.AutoSize = true;
             this.lblLoggedUser.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLoggedUser.ForeColor = System.Drawing.Color.SeaGreen;
-            this.lblLoggedUser.Location = new System.Drawing.Point(64, 44);
+            this.lblLoggedUser.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.lblLoggedUser.Location = new System.Drawing.Point(63, 43);
             this.lblLoggedUser.Name = "lblLoggedUser";
-            this.lblLoggedUser.Size = new System.Drawing.Size(110, 20);
+            this.lblLoggedUser.Size = new System.Drawing.Size(0, 20);
             this.lblLoggedUser.TabIndex = 3;
-            this.lblLoggedUser.Text = "Kushal Neupane";
             // 
             // lblAppName1
             // 
@@ -183,6 +182,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ADMIN DASHBOARD";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FormAdminDashboard_FormClosed);
+            this.Load += new System.EventHandler(this.FormAdminDashboard_Load);
             this.pnlFooter.ResumeLayout(false);
             this.pnlFooter.PerformLayout();
             this.menuStripTop.ResumeLayout(false);

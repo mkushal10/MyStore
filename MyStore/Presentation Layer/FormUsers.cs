@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MyStore.Business_Logic_Layer;
 using MyStore.Data_Access_Layer;
+using MyStore.Presentation_Layer;
 
 namespace MyStore.User_Interface
 {
@@ -61,15 +62,14 @@ namespace MyStore.User_Interface
             u.gender = cmbGender.Text;
             u.user_type = cmbUserType.Text;
             u.added_date = DateTime.Now;
-            u.added_by = 1;
 
             //Getting Username of the logged in user
-            //string loggedUser = frmLogin.loggedIn;
-            //UserBLL usr = dal.GetIDFromUsername(loggedUser);
+            string loggedUser = FormLogin.loggedIn;
+            UserBLL usr = dal.GetIDFromUsername(loggedUser);
 
-            //u.added_by = usr.id;
+            u.added_by = usr.id;
 
-            //Inserting Data into teh database
+            //Inserting Data into the database
             bool success = dal.Insert(u);
             //If the data is successfully inserted then the value of success will be true else it will be false
             if (success == true)

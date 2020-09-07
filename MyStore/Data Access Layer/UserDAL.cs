@@ -102,7 +102,7 @@ namespace MyStore.Data_Access_Layer
         }
         //endregion
 
-        //#region Update data in Database
+        //region Update data in Database
         public bool Update(UserBLL u)
         {
             bool isSuccess = false;
@@ -151,9 +151,9 @@ namespace MyStore.Data_Access_Layer
             }
             return isSuccess;
         }
-        //#endregion
+        //endregion
 
-        //#region Delete Data from DAtabase
+        //region Delete Data from DAtabase
         public bool Delete(UserBLL u)
         {
             bool isSuccess = false;
@@ -189,9 +189,9 @@ namespace MyStore.Data_Access_Layer
             }
             return isSuccess;
         }
-        //#endregion
+        //endregion
 
-        //#region Search User on Database usingKeywords
+        //region Search User on Database usingKeywords
         public DataTable Search(string keywords)
         {
             //Static MEthod to connect Database
@@ -224,9 +224,9 @@ namespace MyStore.Data_Access_Layer
             //Return the value in DataTable
             return dt;
         }
-        //#endregion
+        //endregion
 
-        //#region Getting User ID from Username
+        //region Getting User ID from Username
         public UserBLL GetIDFromUsername(string username)
         {
             UserBLL u = new UserBLL();
@@ -256,6 +256,6 @@ namespace MyStore.Data_Access_Layer
             }
             return u;
         }
-        //#endregion
+        //endregion
     }
 }

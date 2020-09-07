@@ -1,4 +1,5 @@
-﻿using MyStore.User_Interface;
+﻿using MyStore.Presentation_Layer;
+using MyStore.User_Interface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,6 +25,18 @@ namespace MyStore
         {
             var form2 = new FormUsers();
             form2.Show();//Display the next form window
+        }
+
+        private void FormAdminDashboard_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            FormLogin login = new FormLogin();
+            login.Show();
+            this.Hide();
+        }
+
+        private void FormAdminDashboard_Load(object sender, EventArgs e)
+        {
+            lblLoggedUser.Text = FormLogin.loggedIn;
         }
     }
 }
